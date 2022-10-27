@@ -84,7 +84,7 @@ async function getMovies() {
 
         <div class="card h-100 shadow" data-bs-toggle="tooltip" data-bs-placement="top"
         data-bs-custom-class="custom-tooltip" data-bs-html="true" 
-        data-bs-title="<b>Release date:</b> ${data[i].release_date} <br/> <b>Language:</b> ${data[i].original_language.toUpperCase()} <br/> <b>Rating:</b> ${data[i].vote_average * 10}% ${data[i].overview ? `<br/> <b>Description:</b> ${data[i].overview}` : ''}"
+        data-bs-title="<b>Release date:</b> ${data[i].release_date} <br/> <b>Language:</b> ${data[i].original_language.toUpperCase()} <br/> <b>Rating:</b> ${(data[i].vote_average * 10).toFixed(0)}% ${data[i].overview ? `<br/> <b>Description:</b> ${data[i].overview}` : ''}"
         id=myBtn style="width: 100%; min-height: 250px; cursor:pointer">
           <img src=${img_url}${data[i].poster_path} class="card-img-top" alt="...">
           <div class="card-body">
