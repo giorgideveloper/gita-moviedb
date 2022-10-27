@@ -28,10 +28,6 @@ async function getMovies() {
         </div>
      `;
 
-		// tippy(document.querySelectorAll('.My-tippy'), {
-		// 	content: `${data[i].title}`,
-		// });
-
 		set.classList.add('col-12');
 		set.classList.add('col-lg-4');
 		set.classList.add('col-md-6');
